@@ -6,6 +6,9 @@
     list-style: none !important;
     outline: none !important;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
@@ -23,6 +26,7 @@ nav ul {
     
     > li {
         display:inline-block;
+        cursor: pointer;
     }
 
     li > a {
@@ -41,11 +45,12 @@ nav ul {
 }
 
 .top_menu {
+    position: fixed;
+    margin-left: calc((100% - 1176px)/2);
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 70%;
-    margin: 0 auto;
 }
 
 .logo {
@@ -94,8 +99,17 @@ nav ul {
 
 .more {
     margin-left: 20%;
-    margin-top: 15%;
+    margin-top: 20%;
     color: white;
+}
+
+.change-color {
+    color: black;
+
+    &:hover {
+        border-bottom: 2px solid black;
+        color: grey;
+    }
 }
 
 // section about

@@ -7,41 +7,43 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="./style/style.js"></script>
 		<title>Grzegorz Portfolio</title>
 	</head>
 	<body>
-		<header>
+		<header id="section1">
 			<div class="hero">
 				<nav class="container">
-				    <div class="row">
+					<div class="row">
 						<div class="top_menu">
-							<div class="logo">Grzegorz</div>
+							<div class="logo" id="1">Grzegorz</div>
 							<ul>
-								<li><a href=”#”>HOME</a></li>
-								<li><a href=”#”>ABOUT</a></li>
-								<li><a href=”#”>SERVICES</a></li>
-								<li><a href=”#”>WORKS</a></li>
-								<li><a href=”#”>CONTACT</a></li>
+								<li><a onclick="goToSection1()" id="2" class="menu-sections">HOME</a></li>
+								<li><a onclick="goToSection2()" id="3" class="menu-sections">ABOUT</a></li>
+								<li><a onclick="goToSection3()" id="4" class="menu-sections">SERVICES</a></li>
+								<li><a onclick="goToSection4()" id="5" class="menu-sections">WORKS</a></li>
+								<li><a onclick="goToSection5()" id="6" class="menu-sections">CONTACT</a></li>
 							</ul>
 						</div>
 						<div class="slogan">
-							<p class="welcome">Hi! I'm GRZEGORZ.</p>
-							<p class="nice">Creative Developer located in Zabrze.</p>
+							<p class="welcome">Cześć! Jestem GRZEGORZ.</p>
+							<p class="nice">Junior Front-end Developer.</p>
 							<a class="fa fa-chevron-down fa-2x more" href="#"></a>
 						</div>
 					</div>	
 				</nav>
 			</div>
 		</header>
-		<section class="about">
+		<section class="about" id="section2">
 			<div class="container">
 				<div class="row">
 					<img src="./images/me.jpg" alt="my picture">
 					<div class="desc">
-						<p class="title">ABOUT ME</p>
+						<p class="title">O MNIE</p>
 						<p class="position">Creative developer</p>
 						<p class="text-about">
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores dolorem maiores unde aliquid repellat soluta non. Fugit dolor perferendis esse perspiciatis ipsum, eos minima odio labore voluptatibus impedit fugiat quia?
+							Od ok. 2 lat hobbystycznie rozwijam swoje umiejętności w programowaniu i uczestniczę w szkoleniach, na których używałem m.in. technologi HTML5, CSS, JavaScript, MongoDB, React oraz wykonywałem projekty dodatkowe - w tym jeden projekt grupowy (symulacja pracy - Jira, Kanban). Dobrze odnajduję się w zespole i zależy mi na poznawaniu nowych technologi oraz rozwiązań stosowanych w Państwa firmie.
+							Jestem osobą ambitną, która lubi wyzwania i dąży do tego, aby cięgle rozwijać swoje umiejętności, dlatego swoją dalszą ścieżkę kariery chciałbym związać z programowaniem.
 						</p>
 						<a href="https://www.linkedin.com/in/grzegorz-gebala/">
 							<i class="fab fa-linkedin"></i>
@@ -53,7 +55,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="services">
+		<section class="services" id="section3">
 			<div class="container">
 				<div class="row">
 					<h6>SERVICES</h6>
@@ -90,7 +92,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="portfolio">
+		<section class="portfolio" id="section4">
 			<div class="container">
 				<div class="row">
 					<h6>PORTFOLIO</h6>
@@ -145,7 +147,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="contact">
+		<section class="contact" id="section5">
 			<div class="container">
 				<div class="row">
 					<h6>CONTACT</h6>

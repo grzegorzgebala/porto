@@ -6,6 +6,9 @@
   list-style: none !important;
   outline: none !important; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   margin: 0; }
 
@@ -17,7 +20,8 @@ body {
 nav ul {
   list-style-type: none; }
   nav ul > li {
-    display: inline-block; }
+    display: inline-block;
+    cursor: pointer; }
   nav ul li > a {
     line-height: 50px;
     color: white;
@@ -30,11 +34,12 @@ nav ul {
     color: #b9b2b2; }
 
 .top_menu {
+  position: fixed;
+  margin-left: calc((100% - 1176px)/2);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
-  margin: 0 auto; }
+  width: 70%; }
 
 .logo {
   font-size: 26px;
@@ -77,8 +82,14 @@ nav ul {
 
 .more {
   margin-left: 20%;
-  margin-top: 15%;
+  margin-top: 20%;
   color: white; }
+
+.change-color {
+  color: black; }
+  .change-color:hover {
+    border-bottom: 2px solid black;
+    color: grey; }
 
 .about .row {
   display: flex; }
