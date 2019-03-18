@@ -89,12 +89,16 @@ nav ul {
 }
 
 .nice {
-    font-size: 24px;
+    font-size: 30px;
     font-family: "Montserrat";
     color: rgb(255, 255, 255);
     line-height: 1.2;
     position: relative;
+    margin-top: 15px;
     margin-bottom: 60px;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .more {
@@ -112,6 +116,48 @@ nav ul {
     }
 }
 
+.choosed-white {
+    border-bottom: 2px solid white;
+}
+
+.choosed-black {
+    border-bottom: 2px solid black;
+}
+
+// Animation text under hello
+.anim-typewriter{
+    animation: typewriter 3s steps(44) 1s 1 normal both,
+                blinkTextCursor 900ms steps(44) infinite normal;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 10em;}
+}
+@keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+}
+
+// jumping arrow
+// Animation
+@keyframes jump { 0% { top: 0; } 50% { top: 50px; } 100% { top: 0; } }
+
+#arrow-down { 
+    position: relative; 
+    animation: jump 2s infinite;
+    
+    a { 
+        font-size: 50px; 
+    }
+
+    a:hover { 
+        color: rgb(185, 178, 178); 
+    }
+}
+
 // section about
 .about {
     .row {
@@ -122,6 +168,17 @@ nav ul {
         height: 480px;
         margin: 10% 20%;
         margin-right: 2%;
+        position: relative;
+    }
+
+    .box {
+        content: "";
+        height: 480px;
+        width: 393px;
+        background: #eaeaea;
+        position: absolute;
+        left: 300px;
+        top: 1103px;
     }
 
     .desc {
@@ -135,18 +192,18 @@ nav ul {
     
         .position {
             font-size: 19px;
-            margin-bottom: 6%;
+            margin-bottom: 3%;
         }
     
         .text-about {
             line-height: 28px;
             font-size: 16px;
             width: 50%;
-            margin-bottom: 6%;
+            margin-bottom: 5%;
         }
 
         a {
-            margin-bottom: 6%;
+            margin-bottom: 4%;
             width: 43px;
         }
 
@@ -160,6 +217,14 @@ nav ul {
             width: 120px;
             color: white;
             background: black;
+        }
+
+        .contact-icons {
+            display: flex;
+            
+            .fa-github {
+                margin-left: 20px;
+            }
         }
     }
 }
@@ -210,60 +275,57 @@ nav ul {
         width: 100%;
         height: auto;
     }
-    
-    .item-content {
-        position: relative;
-        overflow: hidden;
+    .row-projects {
+        display: flex;
+        justify-content: center;
     }
+    .item {
+        background: #252424;
+        margin: 20px;
+        padding: 10px;
 
-    .item-content:before {
-        content: "";
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        bottom: 10px;
-        left: 10px;
-        background-color: rgba(255, 255, 255, 0.9);
-        opacity: 0;
-        transform: scale(0.8);
-        transition: .5s all ease;
-    }
+        .item-content {
+            position: relative;
+            overflow: hidden;
+            max-height: 240px;
+        }
 
-    .item-content:hover:before {
-        transform: scale(1);
-        opacity: 1;
-    }
-    .item-overlay {
-        position: absolute;
-        width: 100%;
-        top: 50%;
-        transform: translateY(-50%);
-        text-align: center;
-    }
+        h3 {
+            color: white;
+            text-align: left;
+            margin-bottom: 30px;
+        }
 
-    .icon {
-        transform: translateY(0);
-        opacity: 1;
-        transition: .5s all ease;
-    }
+        h3:after {
+            content: "";
+            border-bottom: 2px solid white;
+        }
 
-    h6 {
-        transform: translateY(0);
-        opacity: 1;
-    }
+        p {
+            color: white;
+            font-size: 18px;
+            min-height: 120px;
+        }
 
-    a {
-        display: inline-block;
-        transition: .5s all ease;
-        height: 40px;
-        width: 40px;
-        margin-top: 30px;
-        background-color: #fff;
-        font-size: 22px;
-        line-height: 40px;
-        color: #222;
-        border-radius: 20%;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 70px;
+
+            button {
+                padding: 10px;
+                width: 100px;
+                background: grey;
+                color: white;
+                margin-bottom: 10px;
+            }
+
+            button:hover {
+                background: rgba(255,255,255,0.2);
+                border-radius: 25px;
+                transition: 1500ms;
+            }
+        }
     }
 }
 

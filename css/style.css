@@ -73,12 +73,16 @@ nav ul {
   margin: 0; }
 
 .nice {
-  font-size: 24px;
+  font-size: 30px;
   font-family: "Montserrat";
   color: white;
   line-height: 1.2;
   position: relative;
-  margin-bottom: 60px; }
+  margin-top: 15px;
+  margin-bottom: 60px;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+  overflow: hidden; }
 
 .more {
   margin-left: 20%;
@@ -91,12 +95,57 @@ nav ul {
     border-bottom: 2px solid black;
     color: grey; }
 
+.choosed-white {
+  border-bottom: 2px solid white; }
+
+.choosed-black {
+  border-bottom: 2px solid black; }
+
+.anim-typewriter {
+  animation: typewriter 3s steps(44) 1s 1 normal both, blinkTextCursor 900ms steps(44) infinite normal;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; }
+
+@keyframes typewriter {
+  from {
+    width: 0; }
+  to {
+    width: 10em; } }
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75); }
+  to {
+    border-right-color: transparent; } }
+@keyframes jump {
+  0% {
+    top: 0; }
+  50% {
+    top: 50px; }
+  100% {
+    top: 0; } }
+#arrow-down {
+  position: relative;
+  animation: jump 2s infinite; }
+  #arrow-down a {
+    font-size: 50px; }
+  #arrow-down a:hover {
+    color: #b9b2b2; }
+
 .about .row {
   display: flex; }
 .about img {
   height: 480px;
   margin: 10% 20%;
-  margin-right: 2%; }
+  margin-right: 2%;
+  position: relative; }
+.about .box {
+  content: "";
+  height: 480px;
+  width: 393px;
+  background: #eaeaea;
+  position: absolute;
+  left: 300px;
+  top: 1103px; }
 .about .desc {
   display: flex;
   flex-direction: column;
@@ -105,14 +154,14 @@ nav ul {
     font-size: 32px; }
   .about .desc .position {
     font-size: 19px;
-    margin-bottom: 6%; }
+    margin-bottom: 3%; }
   .about .desc .text-about {
     line-height: 28px;
     font-size: 16px;
     width: 50%;
-    margin-bottom: 6%; }
+    margin-bottom: 5%; }
   .about .desc a {
-    margin-bottom: 6%;
+    margin-bottom: 4%;
     width: 43px; }
   .about .desc i {
     font-size: 48px;
@@ -122,6 +171,10 @@ nav ul {
     width: 120px;
     color: white;
     background: black; }
+  .about .desc .contact-icons {
+    display: flex; }
+    .about .desc .contact-icons .fa-github {
+      margin-left: 20px; }
 
 .services {
   background-color: #f2f2f2; }
@@ -155,48 +208,42 @@ nav ul {
 .portfolio img {
   width: 100%;
   height: auto; }
-.portfolio .item-content {
-  position: relative;
-  overflow: hidden; }
-.portfolio .item-content:before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  bottom: 10px;
-  left: 10px;
-  background-color: rgba(255, 255, 255, 0.9);
-  opacity: 0;
-  transform: scale(0.8);
-  transition: .5s all ease; }
-.portfolio .item-content:hover:before {
-  transform: scale(1);
-  opacity: 1; }
-.portfolio .item-overlay {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center; }
-.portfolio .icon {
-  transform: translateY(0);
-  opacity: 1;
-  transition: .5s all ease; }
-.portfolio h6 {
-  transform: translateY(0);
-  opacity: 1; }
-.portfolio a {
-  display: inline-block;
-  transition: .5s all ease;
-  height: 40px;
-  width: 40px;
-  margin-top: 30px;
-  background-color: #fff;
-  font-size: 22px;
-  line-height: 40px;
-  color: #222;
-  border-radius: 20%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.45); }
+.portfolio .row-projects {
+  display: flex;
+  justify-content: center; }
+.portfolio .item {
+  background: #252424;
+  margin: 20px;
+  padding: 10px; }
+  .portfolio .item .item-content {
+    position: relative;
+    overflow: hidden;
+    max-height: 240px; }
+  .portfolio .item h3 {
+    color: white;
+    text-align: left;
+    margin-bottom: 30px; }
+  .portfolio .item h3:after {
+    content: "";
+    border-bottom: 2px solid white; }
+  .portfolio .item p {
+    color: white;
+    font-size: 18px;
+    min-height: 120px; }
+  .portfolio .item .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 70px; }
+    .portfolio .item .buttons button {
+      padding: 10px;
+      width: 100px;
+      background: grey;
+      color: white;
+      margin-bottom: 10px; }
+    .portfolio .item .buttons button:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 25px;
+      transition: 1500ms; }
 
 .contact {
   background-color: #f2f2f2; }

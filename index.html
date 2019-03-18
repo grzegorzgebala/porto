@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="./style/style.js"></script>
 		<title>Grzegorz Portfolio</title>
 	</head>
@@ -19,16 +20,18 @@
 							<div class="logo" id="1">Grzegorz</div>
 							<ul>
 								<li><a onclick="goToSection1()" id="2" class="menu-sections">HOME</a></li>
-								<li><a onclick="goToSection2()" id="3" class="menu-sections">ABOUT</a></li>
-								<li><a onclick="goToSection3()" id="4" class="menu-sections">SERVICES</a></li>
-								<li><a onclick="goToSection4()" id="5" class="menu-sections">WORKS</a></li>
-								<li><a onclick="goToSection5()" id="6" class="menu-sections">CONTACT</a></li>
+								<li><a onclick="goToSection2()" id="3" class="menu-sections">O MNIE</a></li>
+								<li><a onclick="goToSection3()" id="4" class="menu-sections">SERWIS</a></li>
+								<li><a onclick="goToSection4()" id="5" class="menu-sections">PORTFOLIO</a></li>
+								<li><a onclick="goToSection5()" id="6" class="menu-sections">KONTAKT</a></li>
 							</ul>
 						</div>
 						<div class="slogan">
 							<p class="welcome">Cześć! Jestem GRZEGORZ.</p>
-							<p class="nice">Junior Front-end Developer.</p>
-							<a class="fa fa-chevron-down fa-2x more" href="#"></a>
+							<p class="nice anim-typewriter">Junior Web Developer.</p>
+							<div id="arrow-down">
+									<a class="fa fa-chevron-down fa-2x more" onclick="goToSection2()"></a>
+							</div>
 						</div>
 					</div>	
 				</nav>
@@ -37,20 +40,23 @@
 		<section class="about" id="section2">
 			<div class="container">
 				<div class="row">
+					<div class="box"></div>
 					<img src="./images/me.jpg" alt="my picture">
 					<div class="desc">
 						<p class="title">O MNIE</p>
-						<p class="position">Creative developer</p>
+						<p class="position">Kreatywny developer</p>
 						<p class="text-about">
-							Od ok. 2 lat hobbystycznie rozwijam swoje umiejętności w programowaniu i uczestniczę w szkoleniach, na których używałem m.in. technologi HTML5, CSS, JavaScript, MongoDB, React oraz wykonywałem projekty dodatkowe - w tym jeden projekt grupowy (symulacja pracy - Jira, Kanban). Dobrze odnajduję się w zespole i zależy mi na poznawaniu nowych technologi oraz rozwiązań stosowanych w Państwa firmie.
+							Od ok. 2 lat hobbystycznie rozwijam swoje umiejętności w programowaniu i uczestniczę w szkoleniach, na których używałem m.in. technologi HTML5, CSS, JavaScript, MongoDB, React oraz wykonywałem projekty dodatkowe - w tym jeden projekt grupowy (symulacja pracy - Jira, Kanban). Dobrze odnajduję się w zespole i zależy mi na poznawaniu nowych technologi.
 							Jestem osobą ambitną, która lubi wyzwania i dąży do tego, aby cięgle rozwijać swoje umiejętności, dlatego swoją dalszą ścieżkę kariery chciałbym związać z programowaniem.
 						</p>
-						<a href="https://www.linkedin.com/in/grzegorz-gebala/">
-							<i class="fab fa-linkedin"></i>
-						</a>
-						<a href="./files/Grzegorz-Gebala-CV.pdf">
-							<button>Download CV</button>
-						</a>
+						<div class="contact-icons">
+							<a href="https://www.linkedin.com/in/grzegorz-gebala/">
+								<i class="fab fa-linkedin"></i>
+							</a>
+							<a href="https://github.com/grzegorzgebala">
+								<i class="fab fa-github"></i>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -58,8 +64,8 @@
 		<section class="services" id="section3">
 			<div class="container">
 				<div class="row">
-					<h6>SERVICES</h6>
-					<h2>WHAT I CAN DO</h2>
+					<h6>SERWIS</h6>
+					<h2>CZYM SIĘ ZAJMUJĘ</h2>
 				</div>
 				<div class="row">
 					<div class="col-md-4">
@@ -68,7 +74,7 @@
 								<i class="fa fa-gears"></i>
 							</span>
 							<h4>Web development</h4>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sequi molestiae nisi eligendi! Commodi veniam nam tempore, libero unde error incidunt quisquam, tenetur saepe voluptas porro perferendis odit accusamus modi.</p>
+							<p>Tworzę kompletne strony internetowe oraz aplikacje Web. Uzywam JS, React, Express, Redux, AJAX oraz stosuję bazy danych np. MongoDB </p>
 						</div>
 					</div>
 					<div class="col-md-4">
@@ -77,7 +83,7 @@
 								<i class="fa fa-mobile"></i>
 							</span>
 							<h4>RESPONSIVE DESIGNE</h4>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sequi molestiae nisi eligendi! Commodi veniam nam tempore, libero unde error incidunt quisquam, tenetur saepe voluptas porro perferendis odit accusamus modi.</p>
+							<p>Przy tworzeniu stron dbam o responsywność. Z chęcią posługuję się flex boxem ale równiez GRID.</p>
 						</div>
 					</div>
 					<div class="col-md-4">
@@ -86,7 +92,7 @@
 								<i class="fa fa-support"></i>
 							</span>
 							<h4>Support</h4>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sequi molestiae nisi eligendi! Commodi veniam nam tempore, libero unde error incidunt quisquam, tenetur saepe voluptas porro perferendis odit accusamus modi.</p>
+							<p>Z chęcią wspieram ludzi w projektach.</p>
 						</div>
 					</div>
 				</div>
@@ -96,52 +102,40 @@
 			<div class="container">
 				<div class="row">
 					<h6>PORTFOLIO</h6>
-					<h2>WORK I HAVE DONE</h2>
+					<h2>PROJEKTY</h2>
 				</div>
-				<div class="row">
-					<div class="col-lg-4 col-md-6 item">
+				<div class="row row-projects">
+					<div class="col-lg-3 col-md-6 item">
 						<div class="item-content">
 							<img src="./images/landing-page.png" alt="first-app">
 						</div>
-						<div class="item-overlay">
-							<h6>Application</h6>
-							<div class="icons">
-								<span class="icon link">
-									<a href="./images/landing-page.png">
-										<i class="fa fa-search"></i>
-									</a>
-								</span>
-							</div>
+						<h3>Landing Page</h3>
+						<p>Prosty landing page</p>
+						<div class="buttons">
+							<button>GITHUB</button>
+							<button>LIVE</button>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-6 item">
+					<div class="col-lg-3 col-md-6 item">
 						<div class="item-content">
 							<img src="./images/awax-project.png" alt="first-app">
 						</div>
-						<div class="item-overlay">
-							<h6>Application</h6>
-							<div class="icons">
-								<span class="icon link">
-									<a href="./images/awax-project.png">
-										<i class="fa fa-search"></i>
-									</a>
-								</span>
-							</div>
+						<h3>Landing Page</h3>
+						<p>Prosty landing page</p>
+						<div class="buttons">
+							<button>GITHUB</button>
+							<button>LIVE</button>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-6 item">
+					<div class="col-lg-3 col-md-6 item">
 						<div class="item-content">
 							<img src="./images/admin-panel.png" alt="first-app">
 						</div>
-						<div class="item-overlay">
-							<h6>Application</h6>
-							<div class="icons">
-								<span class="icon link">
-									<a href="./images/admin-panel.png">
-										<i class="fa fa-search"></i>
-									</a>
-								</span>
-							</div>
+						<h3>Landing Page</h3>
+						<p>Prosty landing page</p>
+						<div class="buttons">
+							<button>GITHUB</button>
+							<button>LIVE</button>
 						</div>
 					</div>
 				</div>
@@ -150,8 +144,8 @@
 		<section class="contact" id="section5">
 			<div class="container">
 				<div class="row">
-					<h6>CONTACT</h6>
-					<h2>GET IN TOUCH</h2>
+					<h6>KONTAKT</h6>
+					<h2>NAPISZ DO MNIE</h2>
 				</div>
 				<div class="row">
 					<div class="col-lg-10 offset-lg-1">
@@ -159,16 +153,16 @@
 							<input type="hidden" name="form-name" value="contactForm">
 							<div class="row">
 								<div class="col-md-6 form-group">
-									<input type="text" class="form-control con-validate" id="contact-name" placeholder="Name" minlength="3">
+									<input type="text" class="form-control con-validate" id="contact-name" placeholder="Imię i Nazwisko" minlength="3">
 								</div>
 								<div class="col-md-6 form-group">
 									<input type="email" class="form-control con-validate" id="contact-email" placeholder="Email">
 								</div>
 								<div class="col-md-12 form-group">
-									<textarea type="text" class="form-control con-validate" id="contact-message" placeholder="How can I help you?" rows="6"></textarea>
+									<textarea type="text" class="form-control con-validate" id="contact-message" placeholder="W czym mogę pomóc?" rows="6"></textarea>
 								</div>
 								<div class="col-md-12 text-center">
-									<button id="contact-submit" class="mt-30 main-btn">Send message</button>
+									<button id="contact-submit" class="mt-30 main-btn">Wyślij</button>
 								</div>
 							</div>
 						</form>
@@ -181,26 +175,26 @@
 				<div class="row text-center">
 					<div class="col-md-3 col-sm-6">
 						<div class="contact-info">
-							<h5>Grzegorz</h5>
-							<p>lorem ipsum donor sit.</p>
+							<h5>Imię i Nazwisko</h5>
+							<p>Grzegorz Gębala</p>
 						</div>
 					</div>
 					<div class="col-md-3 col-sm-6">
 						<div class="contact-info">
-							<h5>Phone</h5>
-							<p>601-549-980</p>
+							<h5>Stanowisko</h5>
+							<p>Junior Web Developer</p>
 						</div>
 					</div>
 					<div class="col-md-3 col-sm-6">
 						<div class="contact-info">
 							<h5>Email</h5>
-							<p>grzegorz@o2.pl</p>
+							<p>g.gebala@protonmail.com</p>
 						</div>
 					</div>
 					<div class="col-md-3 col-sm-6">
 						<div class="contact-info">
 							<h5>Adress</h5>
-							<p>41-908 Zabrze piknikowa 5</p>
+							<p>Zabrze</p>
 						</div>
 					</div>
 				</div>
