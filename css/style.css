@@ -210,26 +210,57 @@ nav ul {
   height: auto; }
 .portfolio .row-projects {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center; }
 .portfolio .item {
-  background: #252424;
+  background: #2e3141;
   margin: 20px;
   padding: 10px; }
   .portfolio .item .item-content {
     position: relative;
     overflow: hidden;
     max-height: 240px; }
+    .portfolio .item .item-content img {
+      position: relative; }
+    .portfolio .item .item-content .technologies {
+      display: none;
+      position: absolute;
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: right;
+      right: 10px;
+      top: 10px; }
+    .portfolio .item .item-content .background-technologies {
+      content: "";
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      bottom: 2px;
+      left: 2px;
+      background-color: rgba(255, 255, 255, 0.9);
+      opacity: 0;
+      transform: scale(0.8);
+      transition: 1s all ease; }
+  .portfolio .item .item-content:hover .background-technologies {
+    transform: scale(1);
+    opacity: 1; }
+  .portfolio .item .item-content:hover .technologies {
+    display: block;
+    transition: 0.5s all ease; }
   .portfolio .item h3 {
     color: white;
     text-align: left;
-    margin-bottom: 30px; }
-  .portfolio .item h3:after {
-    content: "";
-    border-bottom: 2px solid white; }
-  .portfolio .item p {
+    margin-bottom: 30px;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px; }
+  .portfolio .item .description {
     color: white;
     font-size: 18px;
     min-height: 120px; }
+    .portfolio .item .description ul {
+      margin: 8% 0;
+      text-align: right; }
   .portfolio .item .buttons {
     display: flex;
     justify-content: space-between;
@@ -237,13 +268,13 @@ nav ul {
     .portfolio .item .buttons button {
       padding: 10px;
       width: 100px;
-      background: grey;
+      background: #2e3141;
       color: white;
       margin-bottom: 10px; }
     .portfolio .item .buttons button:hover {
       background: rgba(255, 255, 255, 0.2);
       border-radius: 25px;
-      transition: 1500ms; }
+      transition: 500ms; }
 
 .contact {
   background-color: #f2f2f2; }
