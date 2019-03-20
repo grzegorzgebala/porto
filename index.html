@@ -17,7 +17,7 @@
 				<nav class="container">
 					<div class="row">
 						<div class="top_menu">
-							<div class="logo" id="1">Grzegorz</div>
+							<div class="logo" onclick="goToSection1()" id="1">Grzegorz</div>
 							<ul>
 								<li><a onclick="goToSection1()" id="2" class="menu-sections">HOME</a></li>
 								<li><a onclick="goToSection2()" id="3" class="menu-sections">O MNIE</a></li>
@@ -40,14 +40,13 @@
 		<section class="about" id="section2">
 			<div class="container">
 				<div class="row">
-					<div class="box"></div>
 					<img src="./images/me.jpg" alt="my picture">
 					<div class="desc">
 						<p class="title">O MNIE</p>
 						<p class="position">Junior Web Developer</p>
 						<p class="text-about">
-							Od ok. 2 lat hobbystycznie rozwijam swoje umiejętności w programowaniu i uczestniczę w szkoleniach, na których używałem m.in. technologi HTML5, CSS, JavaScript, MongoDB, React oraz wykonywałem projekty dodatkowe - w tym jeden projekt grupowy (symulacja pracy - Jira, Kanban). Dobrze odnajduję się w zespole i zależy mi na poznawaniu nowych technologi.
-							Jestem osobą ambitną, która lubi wyzwania i dąży do tego, aby cięgle rozwijać swoje umiejętności, dlatego swoją dalszą ścieżkę kariery chciałbym związać z programowaniem.
+							Od końca 2017 hobbystycznie rozwijam swoje umiejętności w programowaniu. Swoją naukę rozpocząłem od Java 8 ale potem miałem okazję uczestniczyć w szkoleniach Front-end i Web Developer. Podczas kursów używałem m.in. technologi HTML5, CSS, JavaScript, MongoDB, React oraz wykonywałem projekty dodatkowe - w tym jeden projekt grupowy (symulacja pracy - Jira, Kanban). Dobrze odnajduję się w zespole i zależy mi na poznawaniu nowych technologi.
+							Jestem osobą ambitną, która lubi wyzwania i dąży do tego, aby cięgle rozwijać swoje umiejętności, dlatego swoją dalszą ścieżkę kariery chcę związać z programowaniem.
 						</p>
 						<div class="contact-icons">
 							<a href="https://www.linkedin.com/in/grzegorz-gebala/">
@@ -82,8 +81,8 @@
 							<span class="icon">
 								<i class="fa fa-mobile"></i>
 							</span>
-							<h4>RESPONSIVE DESIGNE</h4>
-							<p>Przy tworzeniu stron dbam o responsywność. Z chęcią posługuję się flex boxem ale równiez GRID.</p>
+							<h4>RESPONSYWNOŚĆ</h4>
+							<p>Przy tworzeniu stron dbam o responsywność. Z chęcią posługuję się flex boxem.</p>
 						</div>
 					</div>
 					<div class="col-md-4">
@@ -91,8 +90,48 @@
 							<span class="icon">
 								<i class="fa fa-support"></i>
 							</span>
-							<h4>Support</h4>
-							<p>Z chęcią wspieram ludzi w projektach.</p>
+							<h4>Nowe Technologie</h4>
+							<p>Z chęcią uczę się nowych technologi i dbam o ciągły</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<h4>Technologie z których korzystam:</h4>
+					<div class="used-technologies">
+						<div>
+							<i class="fab fa-html5"></i>
+							<i class="fab fa-css3-alt"></i>
+							<i class="fab fa-sass"></i>
+							<i class="fab fa-js"></i>
+							<i class="fab fa-node"></i>
+							<i class="fab fa-react"></i>
+							<i class="fab fa-github-square"></i>
+						</div>
+						<div class="col-md-6 col-sm-6 left-skils">
+							<ul>
+								<li>HTML5</li>
+								<li>CCS3, SASS</li>
+								<li>Bootstrap</li>
+								<li>JavaScript ES6</li>
+								<li>Jquery</li>
+								<li>AJAX</li>
+								<li>API</li>
+								<li>NodeJS</li>
+								<li>RWD</li>
+							</ul>
+						</div>
+						<div class="col-md-6 col-sm-6 right-skils">
+							<ul>
+								<li>ReactJS</li>
+								<li>ExpressJS</li>
+								<li>REDUX</li>
+								<li>MongoDB</li>
+								<li>MERN</li>
+								<li>GULP</li>
+								<li>Kanban</li>
+								<li>JIRA</li>
+								<li>Git</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -107,10 +146,11 @@
 				<div class="row row-projects">
 					<div class="col-lg-3 col-md-6 item">
 						<div class="item-content">
-							<img src="./images/landing-page.png" alt="first-app">
+							<img src="./images/landing-page.png" alt="landing page">
 							<div class="background-technologies">
 								<div class="technologies">
-									<ul>Uzyte technologie:
+									<ul>
+										<li>Użyte technologie:</li>
 										<li>HTML5</li>
 										<li>SASS</li>
 									</ul>
@@ -118,22 +158,19 @@
 							</div>
 						</div>
 						<h3>Landing Page</h3>
-						<p class="description">Landing Page - cięcie projektu z pliku PSD przy uyciu Photoshop.</p>
+						<p class="description">Landing Page - cięcie projektu z pliku PSD przy użyciu Photoshop.</p>
 						<div class="buttons">
-							<a href="https://github.com/grzegorzgebala/landingPage.git">
-								<button>GITHUB</button>
-							</a>
-							<a href="https://grzegorzgebala.github.io/landingPage/">
-								<button>LIVE</button>
-							</a>
+							<a href="https://github.com/grzegorzgebala/landingPage.git">GITHUB</a>
+							<a href="https://grzegorzgebala.github.io/landingPage/">LIVE</a>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6 item">
 						<div class="item-content">
-							<img src="./images/awax-project.png" alt="first-app">
+							<img src="./images/awax-project.png" alt="Awax project">
 							<div class="background-technologies">
 								<div class="technologies">
-									<ul>Uzyte technologie:
+									<ul>
+										<li>Użyte technologie:</li>
 										<li>HTML5</li>
 										<li>SASS</li>
 										<li>JS</li>
@@ -142,22 +179,19 @@
 							</div>
 						</div>
 						<h3>AWAX PROJECT</h3>
-						<p class="description">Awax project - cięcie projektu z pliku PSD przy uyciu Photoshop.</p>
+						<p class="description">Awax project - cięcie projektu z pliku PSD przy użyciu Photoshop. Dodatkowo dodany modal - przycisk słuchawki.</p>
 						<div class="buttons">
-							<a href="https://github.com/grzegorzgebala/awax-project.git">
-								<button>GITHUB</button>
-							</a>
-							<a href="https://grzegorzgebala.github.io/awax-project/">
-								<button>LIVE</button>
-							</a>
+							<a href="https://github.com/grzegorzgebala/awax-project.git">GITHUB</a>
+							<a href="https://grzegorzgebala.github.io/awax-project/">LIVE</a>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6 item">
 						<div class="item-content">
-							<img src="./images/admin-panel.png" alt="first-app">
+							<img src="./images/admin-panel.png" alt="Admin panel">
 							<div class="background-technologies">
 								<div class="technologies">
-									<ul>Uzyte technologie:
+									<ul>
+										<li>Użyte technologie:</li>
 										<li>HTML5</li>
 										<li>SASS</li>
 									</ul>
@@ -165,14 +199,91 @@
 							</div>
 						</div>
 						<h3>Admin Panel</h3>
-						<p class="description">Admin Panel - cięcie projektu z pliku PSD przy uyciu Photoshop.</p>
+						<p class="description">Admin Panel - Kompletny admin panel przygotowany do wprowadzenia funkcjonalności.</p>
 						<div class="buttons">
-							<a href="https://github.com/grzegorzgebala/adminPanel.git">
-								<button>GITHUB</button>
-							</a>
-							<a href="https://grzegorzgebala.github.io/adminPanel/">
-								<button>LIVE</button>
-							</a>
+							<a href="https://github.com/grzegorzgebala/adminPanel.git">GITHUB</a>
+							<a href="https://grzegorzgebala.github.io/adminPanel/">LIVE</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 item">
+						<div class="item-content">
+							<img src="./images/group-project.png" alt="Shop">
+							<div class="background-technologies">
+								<div class="technologies">
+									<ul>
+										<li>Użyte technologie:</li>
+										<li>HTML5</li>
+										<li>CSS</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<h3>Shop</h3>
+						<p class="description">Projekt grupowy - poprawa błędów w sklepie. Komunikacja Jira, Kanban, Github.</p>
+						<div class="buttons">
+							<a href="https://github.com/grzegorzgebala/group-project.git">GITHUB</a>
+							<a href="https://grzegorzgebala.github.io/group-project/">LIVE</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 item">
+						<div class="item-content">
+							<img src="./images/zad3-3.png" alt="Single Page">
+							<div class="background-technologies">
+								<div class="technologies">
+									<ul>
+										<li>Użyte technologie:</li>
+										<li>HTML5</li>
+										<li>CSS</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<h3>Simple Page</h3>
+						<p class="description">Prosta strona wykonana w HTML i CSS. Zastosowany Grid.</p>
+						<div class="buttons">
+							<a href="https://github.com/grzegorzgebala/zad3-3.git">GITHUB</a>
+							<a href="https://grzegorzgebala.github.io/zad3-3/">LIVE</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 item">
+						<div class="item-content">
+							<img src="./images/rock-scissors.png" alt="Rock Scissors Paper">
+							<div class="background-technologies">
+								<div class="technologies">
+									<ul>
+										<li>Użyte technologie:</li>
+										<li>HTML5</li>
+										<li>SASS</li>
+										<li>JS</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<h3>Rock Scissors Paper</h3>
+						<p class="description">Rock Scissors Paper - Prosta gra kamień papier nożyce.</p>
+						<div class="buttons">
+							<a href="https://github.com/grzegorzgebala/rockScissorsPaper.git">GITHUB</a>
+							<a href="https://grzegorzgebala.github.io/rockScissorsPaper/">LIVE</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 item">
+						<div class="item-content">
+							<img src="./images/github-users.png" alt="Github Users Search">
+							<div class="background-technologies">
+								<div class="technologies">
+									<ul>
+										<li>Użyte technologie:</li>
+										<li>HTML5</li>
+										<li>React</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<h3>Github Users Search</h3>
+						<p class="description">Prosta aplikacja w React do wyszukiwania użytkowników Githuba.</p>
+						<div class="buttons">
+							<a href="https://github.com/grzegorzgebala/githubUsers.git">GITHUB</a>
+							<a href="https://grzegorzgebala.github.io/githubUsers/">LIVE</a>
 						</div>
 					</div>
 				</div>
@@ -186,20 +297,20 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-10 offset-lg-1">
-						<form id="contact-form" action="POST">
+						<form id="contact-form" action="contactForm.php" method="post">
 							<input type="hidden" name="form-name" value="contactForm">
 							<div class="row">
 								<div class="col-md-6 form-group">
-									<input type="text" class="form-control con-validate" id="contact-name" placeholder="Imię i Nazwisko" minlength="3">
+									<input type="text" name="name" class="form-control con-validate" id="contact-name" placeholder="Imię i Nazwisko" minlength="3">
 								</div>
 								<div class="col-md-6 form-group">
-									<input type="email" class="form-control con-validate" id="contact-email" placeholder="Email">
+									<input type="email" name="mail" class="form-control con-validate" id="contact-email" placeholder="Email">
 								</div>
 								<div class="col-md-12 form-group">
-									<textarea type="text" class="form-control con-validate" id="contact-message" placeholder="W czym mogę pomóc?" rows="6"></textarea>
+									<textarea name="message" class="form-control con-validate" id="contact-message" placeholder="W czym mogę pomóc?" rows="6"></textarea>
 								</div>
 								<div class="col-md-12 text-center">
-									<button id="contact-submit" class="mt-30 main-btn">Wyślij</button>
+									<button type="submit" name="submit" id="contact-submit" class="mt-30 main-btn">Wyślij</button>
 								</div>
 							</div>
 						</form>

@@ -46,11 +46,13 @@ nav ul {
 
 .top_menu {
     position: fixed;
-    margin-left: calc((100% - 1176px)/2);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
+    width: 100%;
+    max-width: 1600px;
+    padding: 0 50px;
+    z-index: 1; 
 }
 
 .logo {
@@ -58,7 +60,7 @@ nav ul {
     font-family: 'Dancing Script', cursive;
     color: white;
     display: block;
-    padding-right: 25%;
+    cursor: pointer;
 }
 
 .hero {
@@ -171,16 +173,6 @@ nav ul {
         position: relative;
     }
 
-    .box {
-        content: "";
-        height: 480px;
-        width: 393px;
-        background: #eaeaea;
-        position: absolute;
-        left: 300px;
-        top: 1103px;
-    }
-
     .desc {
         display: flex;
         flex-direction: column;
@@ -198,7 +190,7 @@ nav ul {
         .text-about {
             line-height: 28px;
             font-size: 16px;
-            width: 50%;
+            width: 60%;
             margin-bottom: 5%;
         }
 
@@ -222,6 +214,9 @@ nav ul {
         .contact-icons {
             display: flex;
             
+            .fa-linkedin {
+                color: #0077B5;
+            }
             .fa-github {
                 margin-left: 20px;
             }
@@ -261,6 +256,23 @@ nav ul {
         font-size: 16px;
         line-height: 1.65;
         font-family: "Open Sans", sans-serif;
+    }
+
+    .used-technologies {
+        i {
+            font-size: 60px;
+            margin: 50px 20px;
+        }
+
+        .left-skils {
+            text-align: right;
+            font-size: 24px;
+        }
+
+        .right-skils {
+            text-align: left;
+            font-size: 24px;
+        }
     }
 }
 
@@ -355,15 +367,16 @@ nav ul {
             justify-content: space-between;
             margin: 0 70px;
 
-            button {
+            a {
                 padding: 10px;
                 width: 100px;
                 background: #2e3141;
                 color: white;
+                border: 1px solid grey;
                 margin-bottom: 10px;
             }
 
-            button:hover {
+            a:hover {
                 background: rgba(255,255,255,0.2);
                 border-radius: 25px;
                 transition: 500ms;
@@ -471,5 +484,23 @@ footer {
         font-size: 14px;
         color: #aaa;
         padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .about {
+        img {
+            height: 240px;
+        }
+
+        .desc {
+            .text-about {
+                width: 90%;
+            }
+        }
+
+        .box {
+            display: none;
+        }
     }
 }

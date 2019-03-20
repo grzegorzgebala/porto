@@ -37,7 +37,7 @@ function goToSection5() {
 
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
-    if (scroll >= 853) {
+    if (scroll >= $(section1).height()) {
         for (let i=1; i<=6; i++) {
             document.getElementById(i).classList.add("change-color");
         }
