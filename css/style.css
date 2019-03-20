@@ -364,6 +364,11 @@ footer {
   .about .desc .text-about {
     width: 90%; }
   .about .box {
-    display: none; } }
+    display: none; }
+
+  .service-item p {
+    width: 60%;
+    font-size: 18px;
+    margin: auto; } }
 
 /*# sourceMappingURL=style.css.map */
