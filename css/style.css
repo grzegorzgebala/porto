@@ -31,7 +31,9 @@ nav ul {
     text-transform: uppercase; }
   nav ul li > a:hover {
     border-bottom: 2px solid white;
-    color: #b9b2b2; }
+    color: white;
+    transform: translate(0, 5px);
+    transition: all .5s ease-in-out; }
 
 .top_menu {
   position: fixed;
@@ -62,12 +64,11 @@ nav ul {
   color: white;
   position: relative;
   margin-top: 15%;
-  margin-left: 15%;
   padding-bottom: 10%; }
 
 .welcome {
   font-size: 54px;
-  font-family: "DroidSerif";
+  font-family: 'Candal', sans-serif;
   font-weight: 900;
   color: white;
   line-height: 1.2;
@@ -76,7 +77,7 @@ nav ul {
 
 .nice {
   font-size: 30px;
-  font-family: "Montserrat";
+  font-family: 'Candal', sans-serif;
   color: white;
   line-height: 1.2;
   position: relative;
@@ -87,15 +88,17 @@ nav ul {
   overflow: hidden; }
 
 .more {
-  margin-left: 20%;
   margin-top: 20%;
   color: white; }
+
+.change-color-logo {
+  color: black; }
 
 .change-color {
   color: black; }
   .change-color:hover {
     border-bottom: 2px solid black;
-    color: grey; }
+    color: black; }
 
 .choosed-white {
   border-bottom: 2px solid white; }
@@ -112,7 +115,7 @@ nav ul {
   from {
     width: 0; }
   to {
-    width: 10em; } }
+    width: 13em; } }
 @keyframes blinkTextCursor {
   from {
     border-right-color: rgba(255, 255, 255, 0.75); }
@@ -127,7 +130,8 @@ nav ul {
     top: 0; } }
 #arrow-down {
   position: relative;
-  animation: jump 2s infinite; }
+  animation: jump 2s infinite;
+  text-align: center; }
   #arrow-down a {
     font-size: 50px; }
   #arrow-down a:hover {
@@ -218,7 +222,9 @@ nav ul {
   flex-wrap: wrap;
   justify-content: center; }
 .portfolio .item {
-  background: #2e3141;
+  background: white;
+  border: 1px solid  grey;
+  box-shadow: 10px 10px 5px grey;
   margin: 20px;
   padding: 10px; }
   .portfolio .item .item-content {
@@ -254,13 +260,13 @@ nav ul {
     display: block;
     transition: 0.5s all ease; }
   .portfolio .item h3 {
-    color: white;
+    color: black;
     text-align: left;
     margin-bottom: 30px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid grey;
     padding-bottom: 10px; }
   .portfolio .item .description {
-    color: white;
+    color: black;
     font-size: 18px;
     min-height: 120px; }
     .portfolio .item .description ul {
@@ -273,14 +279,18 @@ nav ul {
     .portfolio .item .buttons a {
       padding: 10px;
       width: 100px;
-      background: #2e3141;
-      color: white;
-      border: 1px solid grey;
+      background: white;
+      box-shadow: 5px 5px 5px grey;
+      color: black;
+      border: 1px solid black;
       margin-bottom: 10px; }
     .portfolio .item .buttons a:hover {
       background: rgba(255, 255, 255, 0.2);
       border-radius: 25px;
       transition: 500ms; }
+.portfolio .projects-in-progress {
+  display: flex;
+  justify-content: center; }
 
 .contact {
   background-color: #f2f2f2; }
