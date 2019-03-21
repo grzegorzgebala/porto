@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
     text-decoration: none !important;
-    list-style: none !important;
     outline: none !important;
 }
 html {
@@ -11,7 +10,7 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: 5px;
 }
 
 // Header, nav
@@ -23,6 +22,7 @@ body {
 
 nav ul {
     list-style-type: none;
+    margin-bottom: 0;
     
     > li {
         display:inline-block;
@@ -50,7 +50,6 @@ nav ul {
     position: fixed;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
     max-width: 1600px;
     padding: 0 50px;
@@ -77,6 +76,7 @@ nav ul {
     text-align: left;
     color: white;
     position: relative;
+    margin-left: 3%;
     margin-top: 15%;
     padding-bottom: 10%;
 }
@@ -228,13 +228,46 @@ nav ul {
         }
     }
 }
-// section services
+// section technologies
 .services {
     background-color: #f2f2f2;
 
     .row {
         text-align: center;
         margin: 6% 0;
+    }
+
+    .row-technologies {
+        margin: 2% 0;
+    }
+
+    .row-technologies-list {
+        margin-top: 2%;
+        margin-bottom: 6%;
+    }
+
+    .fa-html5 {
+        color: #e34f26;
+    }
+
+    .fa-css3-alt {
+        color: #026cb1;
+    }
+
+    .fa-sass {
+        color:#c66494;
+    }
+
+    .fa-js {
+        color:#efd81e;
+    }
+
+    .fa-node {
+        color:#6fa560;
+    }
+
+    .fa-react {
+        color:#5ed3f3;
     }
 
     .icon {
@@ -250,11 +283,18 @@ nav ul {
         transition: .5s all ease;
     }
 
-    h4 {
-        font-size: 18px;
+    .title {
+        font-size: 20px;
         font-weight: 700;
         margin-bottom: 16px;
         text-transform: uppercase;
+    }
+
+    .service-item {
+        ul {
+            text-align: left;
+            padding-left: 40%;
+        }
     }
 
     p {
@@ -268,16 +308,6 @@ nav ul {
             font-size: 60px;
             margin: 50px 20px;
         }
-
-        .left-skils {
-            text-align: right;
-            font-size: 24px;
-        }
-
-        .right-skils {
-            text-align: left;
-            font-size: 24px;
-        }
     }
 }
 
@@ -289,8 +319,8 @@ nav ul {
     }
 
     img {
-        width: 100%;
-        height: auto;
+        width: 380px;
+        height: 300px;
     }
     .row-projects {
         display: flex;
@@ -299,15 +329,13 @@ nav ul {
     }
     .item {
         background: white;
-        border: 1px solid  grey;
-        box-shadow: 10px 10px 5px grey;
         margin: 20px;
         padding: 10px;
 
         .item-content {
             position: relative;
             overflow: hidden;
-            max-height: 240px;
+            border: 1px solid rgb(196, 193, 193);
 
             img {
                 position: relative;
@@ -317,20 +345,27 @@ nav ul {
                 display: none;
                 position: absolute;
                 color: black;
-                font-size: 20px;
-                font-weight: bold;
-                text-align: right;
-                right: 10px;
-                top: 10px;
+                font-size: 40px;
+                left: 120px;
+                top: 110px;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+
+            .fa-search {
+                margin-right: 40px;
             }
 
             .background-technologies {
                 content: "";
                 position: absolute;
-                top: 2px;
-                right: 2px;
-                bottom: 2px;
-                left: 2px;
+                top: 15px;
+                right: 15px;
+                bottom: 15px;
+                left: 15px;
                 background-color: rgba(255, 255, 255, 0.9);
                 opacity: 0;
                 transform: scale(0.8);

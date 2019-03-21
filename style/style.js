@@ -51,7 +51,5 @@ $(window).scroll(function() {
             document.getElementById(i).classList.remove("change-color");
         }
         document.getElementById(1).classList.remove("change-color-logo");
-        
-
     }
 });

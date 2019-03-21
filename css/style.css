@@ -3,14 +3,13 @@
   padding: 0;
   margin: 0;
   text-decoration: none !important;
-  list-style: none !important;
   outline: none !important; }
 
 html {
   scroll-behavior: smooth; }
 
 body {
-  margin: 0; }
+  margin: 5px; }
 
 .container {
   width: 100%;
@@ -18,7 +17,8 @@ body {
   max-width: 1600px; }
 
 nav ul {
-  list-style-type: none; }
+  list-style-type: none;
+  margin-bottom: 0; }
   nav ul > li {
     display: inline-block;
     cursor: pointer; }
@@ -39,7 +39,6 @@ nav ul {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
   max-width: 1600px;
   padding: 0 50px;
@@ -63,6 +62,7 @@ nav ul {
   text-align: left;
   color: white;
   position: relative;
+  margin-left: 3%;
   margin-top: 15%;
   padding-bottom: 10%; }
 
@@ -181,6 +181,23 @@ nav ul {
   .services .row {
     text-align: center;
     margin: 6% 0; }
+  .services .row-technologies {
+    margin: 2% 0; }
+  .services .row-technologies-list {
+    margin-top: 2%;
+    margin-bottom: 6%; }
+  .services .fa-html5 {
+    color: #e34f26; }
+  .services .fa-css3-alt {
+    color: #026cb1; }
+  .services .fa-sass {
+    color: #c66494; }
+  .services .fa-js {
+    color: #efd81e; }
+  .services .fa-node {
+    color: #6fa560; }
+  .services .fa-react {
+    color: #5ed3f3; }
   .services .icon {
     color: #222;
     display: inline-block;
@@ -192,11 +209,14 @@ nav ul {
     border: 1px solid #e3e3e3;
     border-radius: 50%;
     transition: .5s all ease; }
-  .services h4 {
-    font-size: 18px;
+  .services .title {
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 16px;
     text-transform: uppercase; }
+  .services .service-item ul {
+    text-align: left;
+    padding-left: 40%; }
   .services p {
     font-size: 16px;
     line-height: 1.65;
@@ -204,51 +224,46 @@ nav ul {
   .services .used-technologies i {
     font-size: 60px;
     margin: 50px 20px; }
-  .services .used-technologies .left-skils {
-    text-align: right;
-    font-size: 24px; }
-  .services .used-technologies .right-skils {
-    text-align: left;
-    font-size: 24px; }
 
 .portfolio .row {
   text-align: center;
   margin: 6% 0; }
 .portfolio img {
-  width: 100%;
-  height: auto; }
+  width: 380px;
+  height: 300px; }
 .portfolio .row-projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
 .portfolio .item {
   background: white;
-  border: 1px solid  grey;
-  box-shadow: 10px 10px 5px grey;
   margin: 20px;
   padding: 10px; }
   .portfolio .item .item-content {
     position: relative;
     overflow: hidden;
-    max-height: 240px; }
+    border: 1px solid #c4c1c1; }
     .portfolio .item .item-content img {
       position: relative; }
     .portfolio .item .item-content .technologies {
       display: none;
       position: absolute;
       color: black;
-      font-size: 20px;
-      font-weight: bold;
-      text-align: right;
-      right: 10px;
-      top: 10px; }
+      font-size: 40px;
+      left: 120px;
+      top: 110px; }
+      .portfolio .item .item-content .technologies a {
+        text-decoration: none;
+        color: black; }
+    .portfolio .item .item-content .fa-search {
+      margin-right: 40px; }
     .portfolio .item .item-content .background-technologies {
       content: "";
       position: absolute;
-      top: 2px;
-      right: 2px;
-      bottom: 2px;
-      left: 2px;
+      top: 15px;
+      right: 15px;
+      bottom: 15px;
+      left: 15px;
       background-color: rgba(255, 255, 255, 0.9);
       opacity: 0;
       transform: scale(0.8);
