@@ -17,15 +17,17 @@
 			<div class="hero">
 				<nav class="container">
 					<div class="row">
+						<button class="hamburger">&#9776;</button>
+						<button class="cross">&#735;</button>
 						<div class="top_menu">
 							<div class="logo" onclick="goToSection1()" id="1">Grzegorz</div>
 							<ul>
-								<li><a onclick="goToSection1()" id="2" class="menu-sections">HOME</a></li>
-								<li><a onclick="goToSection2()" id="3" class="menu-sections">ABOUT ME</a></li>
-								<li><a onclick="goToSection3()" id="4" class="menu-sections">TECHNOLOGIES</a></li>
-								<li><a onclick="goToSection4()" id="5" class="menu-sections">PORTFOLIO</a></li>
-								<li><a onclick="goToSection5()" id="6" class="menu-sections">CONTACT</a></li>
-								<li><a href="index.html" id="7" class="menu-sections">PL / EN</a></li>
+								<li><a onclick="goToSection1()" id="2">HOME</a></li>
+								<li><a onclick="goToSection2()" id="3">O MNIE</a></li>
+								<li><a onclick="goToSection3()" id="4">TECHNOLOGIE</a></li>
+								<li><a onclick="goToSection4()" id="5">PORTFOLIO</a></li>
+								<li><a onclick="goToSection5()" id="6">KONTAKT</a></li>
+								<li><a href="EN.html" id="7">PL / EN</a></li>
 							</ul>
 						</div>
 						<div class="slogan">
@@ -68,261 +70,206 @@
 			</div>
 		</section>
 		<section class="services" id="section3">
-			<div class="container">
-				<div class="row">
-					<h6>TECHNOLOGIES</h6>
-					<h2>WHAT I CAN DO</h2>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="service-item">
-							<span class="icon">
-								<i class="fa fa-gears"></i>
-							</span>
-							<h4>Web development</h4>
-							<p>I prepare Web sites and Web applications.I use JS, React, Express, Redux, AJAX and MongoDB </p>
+				<div class="container">
+					<div class="row">
+						<h6>TECHNOLOGIES</h6>
+						<h2>WHAT I CAN DO</h2>
+					</div>
+					<div class="row row-technologies">
+						<div class="used-technologies">
+							<div>
+								<i class="fab fa-html5"></i>
+								<i class="fab fa-css3-alt"></i>
+								<i class="fab fa-sass"></i>
+								<i class="fab fa-js"></i>
+								<i class="fab fa-node"></i>
+								<i class="fab fa-react"></i>
+								<i class="fab fa-github-square"></i>
+							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="service-item">
-							<span class="icon">
-								<i class="fa fa-mobile"></i>
-							</span>
-							<h4>RESPONSIVITY</h4>
-							<p>I take care about responsivity. I am fun using flex boxem.</p>
+					<div class="row row-technologies-list">
+						<div class="col-md-4">
+							<div class="service-item">
+								<span class="icon">
+									<i class="fa fa-mobile"></i>
+								</span>
+								<div class="title">Front-end</div>
+								<ul>
+									<li>HTML5</li>
+									<li>CCS3, SASS</li>
+									<li>Bootstrap</li>
+									<li>JavaScript ES6</li>
+									<li>Jquery</li>
+									<li>RWD</li>
+								</ul>
+							</div>
 						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="service-item">
-							<span class="icon">
-								<i class="fa fa-support"></i>
-							</span>
-							<h4>New Technologies</h4>
-							<p>With pleasure I learn new technologies and continuous develop.</p>
+						<div class="col-md-4">
+							<div class="service-item">
+								<span class="icon">
+									<i class="fa fa-gears"></i>
+								</span>
+								<div class="title">Back-end</div>
+								<ul>
+										<li>ReactJS</li>
+										<li>ExpressJS</li>
+										<li>REDUX</li>
+										<li>MongoDB</li>
+										<li>NodeJS</li>
+										<li>MERN</li>
+										<li>GULP</li>
+										<li>AJAX</li>
+										<li>API</li>
+									</ul>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="row">
-					<h4>Technologies that I use:</h4>
-					<div class="used-technologies">
-						<div>
-							<i class="fab fa-html5"></i>
-							<i class="fab fa-css3-alt"></i>
-							<i class="fab fa-sass"></i>
-							<i class="fab fa-js"></i>
-							<i class="fab fa-node"></i>
-							<i class="fab fa-react"></i>
-							<i class="fab fa-github-square"></i>
-						</div>
-						<div class="col-md-6 col-sm-6 left-skils">
-							<ul>
-								<li>HTML5</li>
-								<li>CCS3, SASS</li>
-								<li>Bootstrap</li>
-								<li>JavaScript ES6</li>
-								<li>Jquery</li>
-								<li>AJAX</li>
-								<li>API</li>
-								<li>NodeJS</li>
-								<li>RWD</li>
-							</ul>
-						</div>
-						<div class="col-md-6 col-sm-6 right-skils">
-							<ul>
-								<li>ReactJS</li>
-								<li>ExpressJS</li>
-								<li>REDUX</li>
-								<li>MongoDB</li>
-								<li>MERN</li>
-								<li>GULP</li>
-								<li>Kanban</li>
-								<li>JIRA</li>
-								<li>Git</li>
-							</ul>
+						<div class="col-md-4">
+							<div class="service-item">
+								<span class="icon">
+									<i class="fa fa-support"></i>
+								</span>
+								<div class="title">Additional Skills</div>
+								<ul>
+										<li>Kanban</li>
+									<li>JIRA</li>
+									<li>Git</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="portfolio" id="section4">
-			<div class="container">
-				<div class="row">
-					<h6>PORTFOLIO</h6>
-					<h2>PROJECTS</h2>
-				</div>
-				<div class="row row-projects">
-					<div class="col-lg-3 col-md-6 item">
-						<div class="item-content">
-							<img src="./images/landing-page.png" alt="landing page">
-							<div class="background-technologies">
-								<div class="technologies">
-									<ul>
-										<li>Technologies:</li>
-										<li>HTML5</li>
-										<li>SASS</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<h3>Landing Page</h3>
-						<p class="description">Landing Page - cutting project from PSD using Photoshop.</p>
-						<div class="buttons">
-							<a href="https://github.com/grzegorzgebala/landingPage.git">GITHUB</a>
-							<a href="https://grzegorzgebala.github.io/landingPage/">LIVE</a>
-						</div>
+			</section>
+			<section class="portfolio" id="section4">
+				<div class="container">
+					<div class="row">
+						<h6>PORTFOLIO</h6>
+						<h2>PROJECTS</h2>
 					</div>
-					<div class="col-lg-3 col-md-6 item">
-						<div class="item-content">
-							<img src="./images/awax-project.png" alt="Awax project">
-							<div class="background-technologies">
-								<div class="technologies">
-									<ul>
-										<li>Technologies:</li>
-										<li>HTML5</li>
-										<li>SASS</li>
-										<li>JS</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<h3>AWAX PROJECT</h3>
-						<p class="description">Awax project - cutting project from PSD using Photoshop. Additional modal - voice button.</p>
-						<div class="buttons">
-							<a href="https://github.com/grzegorzgebala/awax-project.git">GITHUB</a>
-							<a href="https://grzegorzgebala.github.io/awax-project/">LIVE</a>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 item">
-						<div class="item-content">
-							<img src="./images/admin-panel.png" alt="Admin panel">
-							<div class="background-technologies">
-								<div class="technologies">
-									<ul>
-										<li>Technologies:</li>
-										<li>HTML5</li>
-										<li>SASS</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<h3>Admin Panel</h3>
-						<p class="description">Admin Panel - Complete admin panel prepared to implement functionality.</p>
-						<div class="buttons">
-							<a href="https://github.com/grzegorzgebala/adminPanel.git">GITHUB</a>
-							<a href="https://grzegorzgebala.github.io/adminPanel/">LIVE</a>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 item">
-						<div class="item-content">
-							<img src="./images/group-project.png" alt="Shop">
-							<div class="background-technologies">
-								<div class="technologies">
-									<ul>
-										<li>Technologies:</li>
-										<li>HTML5</li>
-										<li>CSS</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<h3>Shop</h3>
-						<p class="description">Group project - reapir bugs. Communication Jira, Kanban, Github.</p>
-						<div class="buttons">
-							<a href="https://github.com/grzegorzgebala/group-project.git">GITHUB</a>
-							<a href="https://grzegorzgebala.github.io/group-project/">LIVE</a>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 item">
-						<div class="item-content">
-							<img src="./images/zad3-3.png" alt="Single Page">
-							<div class="background-technologies">
-								<div class="technologies">
-									<ul>
-										<li>Technologies:</li>
-										<li>HTML5</li>
-										<li>CSS</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<h3>Simple Page</h3>
-						<p class="description">Simple web site prepared using HTML i CSS, Grid.</p>
-						<div class="buttons">
-							<a href="https://github.com/grzegorzgebala/zad3-3.git">GITHUB</a>
-							<a href="https://grzegorzgebala.github.io/zad3-3/">LIVE</a>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 item">
-						<div class="item-content">
-							<img src="./images/rock-scissors.png" alt="Rock Scissors Paper">
-							<div class="background-technologies">
-								<div class="technologies">
-									<ul>
-										<li>Technologies:</li>
-										<li>HTML5</li>
-										<li>SASS</li>
-										<li>JS</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<h3>Rock Scissors Paper</h3>
-						<p class="description">Rock Scissors Paper - Simple game.</p>
-						<div class="buttons">
-							<a href="https://github.com/grzegorzgebala/rockScissorsPaper.git">GITHUB</a>
-							<a href="https://grzegorzgebala.github.io/rockScissorsPaper/">LIVE</a>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 item">
-						<div class="item-content">
-							<img src="./images/github-users.png" alt="Github Users Search">
-							<div class="background-technologies">
-								<div class="technologies">
-									<ul>
-										<li>Technologies:</li>
-										<li>HTML5</li>
-										<li>React</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<h3>Github Users Search</h3>
-						<p class="description">Simple React application to find Github users.</p>
-						<div class="buttons">
-							<a href="https://github.com/grzegorzgebala/githubUsers.git">GITHUB</a>
-							<a href="https://grzegorzgebala.github.io/githubUsers/">LIVE</a>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<h3>Projects in progress</h3>
-					<div class="projects-in-progress">
+					<div class="row row-projects">
 						<div class="col-lg-3 col-md-6 item">
 							<div class="item-content">
-								<img src="./images/meetup-registration.png" alt="meetup-registration">
+								<img src="./images/landing-page.png" alt="landing page">
 								<div class="background-technologies">
 									<div class="technologies">
-										<ul>
-											<li>Technologies:</li>
-											<li>HTML5</li>
-											<li>React</li>
-											<li>Node.js</li>
-											<li>MongoDB</li>
-										</ul>
+										<a href="https://grzegorzgebala.github.io/landingPage/">
+											<i class="fas fa-search"></i>
+										</a>
+										<a href="https://github.com/grzegorzgebala/landingPage.git">
+											<i class="fab fa-github"></i>
+										</a>
 									</div>
 								</div>
 							</div>
-							<h3>Meetup registration</h3>
-							<p class="description">React application for registration meetup participants. Data writed in data base and list from data base shown on screen. Application during prepare.</p>
-							<div class="buttons">
-								<a href="https://github.com/grzegorzgebala/meetup-registration.git">GITHUB</a>
-								<a href="https://github.com/grzegorzgebala/meetup-registration.git">GITHUB</a>
+						</div>
+						<div class="col-lg-3 col-md-6 item">
+							<div class="item-content">
+								<img src="./images/awax-project.png" alt="awax-project">
+								<div class="background-technologies">
+									<div class="technologies">
+										<a href="https://grzegorzgebala.github.io/awax-project/">
+											<i class="fas fa-search"></i>
+										</a>
+										<a href="https://github.com/grzegorzgebala/awax-project.git">
+											<i class="fab fa-github"></i>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
+						<div class="col-lg-3 col-md-6 item">
+							<div class="item-content">
+								<img src="./images/admin-panel.png" alt="admin-panel">
+								<div class="background-technologies">
+									<div class="technologies">
+										<a href="https://grzegorzgebala.github.io/adminPanel/">
+											<i class="fas fa-search"></i>
+										</a>
+										<a href="https://github.com/grzegorzgebala/adminPanel.git">
+											<i class="fab fa-github"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 item">
+							<div class="item-content">
+								<img src="./images/group-project.png" alt="Shop">
+								<div class="background-technologies">
+									<div class="technologies">
+										<a href="https://grzegorzgebala.github.io/group-project/">
+											<i class="fas fa-search"></i>
+										</a>
+										<a href="https://github.com/grzegorzgebala/group-project.git">
+											<i class="fab fa-github"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 item">
+							<div class="item-content">
+								<img src="./images/zad3-3.png" alt="Single Page">
+								<div class="background-technologies">
+									<div class="technologies">
+										<a href="https://grzegorzgebala.github.io/zad3-3/">
+											<i class="fas fa-search"></i>
+										</a>
+										<a href="https://github.com/grzegorzgebala/zad3-3.git">
+											<i class="fab fa-github"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 item">
+							<div class="item-content">
+								<img src="./images/rock-scissors.png" alt="Rock Scissors Paper">
+								<div class="background-technologies">
+									<div class="technologies">
+										<a href="https://grzegorzgebala.github.io/rockScissorsPaper/">
+											<i class="fas fa-search"></i>
+										</a>
+										<a href="https://github.com/grzegorzgebala/rockScissorsPaper.git">
+											<i class="fab fa-github"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 item">
+							<div class="item-content">
+								<img src="./images/github-users.png" alt="Github Users Search">
+								<div class="background-technologies">
+									<div class="technologies">
+										<a href="https://grzegorzgebala.github.io/githubUsers/">
+											<i class="fas fa-search"></i>
+										</a>
+										<a href="https://github.com/grzegorzgebala/githubUsers.git">
+											<i class="fab fa-github"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 item">
+								<div class="item-content">
+									<img src="./images/meetup-registration.png" alt="meetup-registration">
+									<div class="background-technologies">
+										<div class="technologies">
+											<a href="#">
+												<i class="fas fa-search"></i>
+											</a>
+											<a href="https://github.com/grzegorzgebala/meetup-registration.git">
+												<i class="fab fa-github"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 		<section class="contact" id="section5">
 			<div class="container">
 				<div class="row">

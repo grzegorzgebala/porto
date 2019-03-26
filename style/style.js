@@ -53,3 +53,23 @@ $(window).scroll(function() {
         document.getElementById(1).classList.remove("change-color-logo");
     }
 });
+
+$( document ).ready(function() {
+    var width = $(window).width();
+    if (width < 1240){
+        $( ".hamburger" ).show();
+        $( ".hamburger" ).click(function() {
+            $( ".top_menu" ).slideToggle( "slow", function() {
+                $( ".hamburger" ).hide();
+                $( ".cross" ).show();
+            });
+        });
+        
+        $( ".cross" ).click(function() {
+            $( ".top_menu" ).slideToggle( "slow", function() {
+                $( ".cross" ).hide();
+                $( ".hamburger" ).show();
+            });
+        });
+    }
+});

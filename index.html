@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
 		<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Candal" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,15 +18,17 @@
 			<div class="hero">
 				<nav class="container">
 					<div class="row">
+						<button class="hamburger">&#9776;</button>
+						<button class="cross">&#735;</button>
 						<div class="top_menu">
 							<div class="logo" onclick="goToSection1()" id="1">Grzegorz</div>
 							<ul>
-								<li><a onclick="goToSection1()" id="2" class="menu-sections">HOME</a></li>
-								<li><a onclick="goToSection2()" id="3" class="menu-sections">O MNIE</a></li>
-								<li><a onclick="goToSection3()" id="4" class="menu-sections">TECHNOLOGIE</a></li>
-								<li><a onclick="goToSection4()" id="5" class="menu-sections">PORTFOLIO</a></li>
-								<li><a onclick="goToSection5()" id="6" class="menu-sections">KONTAKT</a></li>
-								<li><a href="EN.html" id="7" class="menu-sections">PL / EN</a></li>
+								<li><a onclick="goToSection1()" id="2">HOME</a></li>
+								<li><a onclick="goToSection2()" id="3">O MNIE</a></li>
+								<li><a onclick="goToSection3()" id="4">TECHNOLOGIE</a></li>
+								<li><a onclick="goToSection4()" id="5">PORTFOLIO</a></li>
+								<li><a onclick="goToSection5()" id="6">KONTAKT</a></li>
+								<li><a href="EN.html" id="7">PL / EN</a></li>
 							</ul>
 						</div>
 						<div class="slogan">
@@ -245,11 +248,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="row">
-					<h3>Realizacje w trakcie</h3>
-					<div class="projects-in-progress">
-						<div class="col-lg-3 col-md-6 item">
+					<div class="col-lg-3 col-md-6 item">
 							<div class="item-content">
 								<img src="./images/meetup-registration.png" alt="meetup-registration">
 								<div class="background-technologies">
@@ -264,7 +263,6 @@
 								</div>
 							</div>
 						</div>
-					</div>
 				</div>
 			</div>
 		</section>
