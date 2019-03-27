@@ -8,9 +8,6 @@
 html {
   scroll-behavior: smooth; }
 
-body {
-  margin: 5px; }
-
 .container {
   width: 100%;
   margin: 0 auto;
@@ -88,7 +85,7 @@ nav ul {
   overflow: hidden; }
 
 .more {
-  margin-top: 20%;
+  margin-top: 10%;
   color: white; }
 
 .change-color-logo {
@@ -185,7 +182,9 @@ nav ul {
     margin: 2% 0; }
   .services .row-technologies-list {
     margin-top: 2%;
-    margin-bottom: 6%; }
+    margin-bottom: 6%;
+    display: flex;
+    justify-content: center; }
   .services .fa-html5 {
     color: #e34f26; }
   .services .fa-css3-alt {
@@ -242,16 +241,20 @@ nav ul {
   .portfolio .item .item-content {
     position: relative;
     overflow: hidden;
-    border: 1px solid #ddd8d8; }
+    border: 1px solid #ddd8d8;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20em; }
     .portfolio .item .item-content img {
-      position: relative; }
+      position: relative;
+      object-fit: cover; }
     .portfolio .item .item-content .technologies {
       display: none;
       position: absolute;
       color: black;
-      font-size: 40px;
-      left: 120px;
-      top: 110px; }
+      font-size: 40px; }
       .portfolio .item .item-content .technologies a {
         text-decoration: none;
         color: black; }
@@ -260,11 +263,14 @@ nav ul {
     .portfolio .item .item-content .background-technologies {
       content: "";
       position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.9);
       top: 15px;
       right: 15px;
       bottom: 15px;
       left: 15px;
-      background-color: rgba(255, 255, 255, 0.9);
       opacity: 0;
       transform: scale(0.8);
       transition: 1s all ease; }
@@ -272,7 +278,8 @@ nav ul {
     transform: scale(1);
     opacity: 1; }
   .portfolio .item .item-content:hover .technologies {
-    display: block;
+    display: flex;
+    justify-content: center;
     transition: 0.5s all ease; }
 .portfolio .projects-in-progress {
   display: flex;
@@ -427,7 +434,10 @@ footer {
   .service-item p {
     width: 60%;
     font-size: 18px;
-    margin: auto; } }
+    margin: auto; }
+
+  .services .row-technologies-list {
+    display: block; } }
 @media screen and (max-width: 880px) {
   h2 {
     font-size: 24px; }
@@ -481,6 +491,9 @@ footer {
     .about .row .text-about {
       font-size: 12px;
       line-height: 1.5; }
+
+  .portfolio .item .item-content {
+    height: 15em; }
 
   footer {
     padding: 3px; }

@@ -9,10 +9,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    margin: 5px;
-}
-
 // Header, nav
 .container {
     width: 100%;
@@ -105,7 +101,7 @@ nav ul {
 }
 
 .more {
-    margin-top: 20%;
+    margin-top: 10%;
     color: white;
 }
 
@@ -244,6 +240,8 @@ nav ul {
     .row-technologies-list {
         margin-top: 2%;
         margin-bottom: 6%;
+        display: flex;
+        justify-content: center;
     }
 
     .fa-html5 {
@@ -338,9 +336,15 @@ nav ul {
             position: relative;
             overflow: hidden;
             border: 1px solid rgb(221, 216, 216);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20em;
 
             img {
                 position: relative;
+                object-fit: cover;
             }
 
             .technologies {
@@ -348,8 +352,6 @@ nav ul {
                 position: absolute;
                 color: black;
                 font-size: 40px;
-                left: 120px;
-                top: 110px;
 
                 a {
                     text-decoration: none;
@@ -364,11 +366,14 @@ nav ul {
             .background-technologies {
                 content: "";
                 position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(255, 255, 255, 0.9);
                 top: 15px;
                 right: 15px;
                 bottom: 15px;
                 left: 15px;
-                background-color: rgba(255, 255, 255, 0.9);
                 opacity: 0;
                 transform: scale(0.8);
                 transition: 1s all ease;
@@ -383,7 +388,8 @@ nav ul {
             }
 
             .technologies {
-                display: block;
+                display: flex;
+                justify-content: center;
                 transition: 0.5s all ease;
             }
         }
@@ -596,6 +602,12 @@ footer {
             margin: auto;
         }
     }
+
+    .services {
+        .row-technologies-list {
+            display: block;
+        }
+    }
 }
 
 @media screen and (max-width: 880px) {
@@ -665,6 +677,14 @@ footer {
         .text-about {
             font-size: 12px;
             line-height: 1.5;
+        }
+    }
+
+    .portfolio {
+        .item {
+            .item-content {
+                height: 15em;
+            }
         }
     }
 

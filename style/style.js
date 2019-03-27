@@ -1,6 +1,6 @@
 'use strict';
 
-// menu header
+// menu header click
 function goToSection1() {
     document.getElementById("section1").scrollIntoView();
     for (let i=2; i<=7; i++) {
@@ -39,9 +39,10 @@ function goToSection5() {
     document.getElementById(1).classList.add("change-color-logo");
 }
 
+// scroll menu
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
-    if (scroll >= $(section1).height()) {
+    if (scroll >= ($(section1).height()-5)) {
         for (let i=2; i<=7; i++) {
             document.getElementById(i).classList.add("change-color");
         }
@@ -54,6 +55,7 @@ $(window).scroll(function() {
     }
 });
 
+// hamburger menu
 $( document ).ready(function() {
     var width = $(window).width();
     if (width < 1240){
